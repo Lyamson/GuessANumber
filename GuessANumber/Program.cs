@@ -17,3 +17,4 @@ do{
 } while (guess != number);
 
 Console.WriteLine("Congrats! Attempts used: " + attempts);
+Console.ReadKey();
