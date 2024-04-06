@@ -8,10 +8,10 @@ do{
         Console.Write("Your guess: ");
     } while (!int.TryParse(Console.ReadLine(), out guess));
     if (number > guess) {
-        Console.WriteLine("Higher");
+        Console.WriteLine("Higher.");
     }
     else if(number < guess){
-        Console.WriteLine("Lower");
+        Console.WriteLine("Lower.");
     }
     attempts++;
 } while (guess != number);
