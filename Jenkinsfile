@@ -1,15 +1,10 @@
-pipeline{
-	agent any
-	options{
-		timestamps()
-	}
-	stages{
-		stage('This is a test!'){
-			steps{
-				script{
-					print 'Hello World! New words.'
-				}
-			}
-		}
-	}
+pipeline {
+    agent any
+    stages {
+        stage('Stage 1') {
+            steps {
+                echo 'Hello world!'
+            }
+        }
+    }
 }
