@@ -2,6 +2,7 @@
 int number = rnd.Next(0, 101);
 
 int guess = -1;
+int attempts = 0;
 do{
     do {
         Console.Write("Your guess: ");
@@ -12,6 +13,7 @@ do{
     else if(number < guess){
         Console.WriteLine("Lower");
     }
+    attempts++;
 } while (guess != number);
 
-Console.WriteLine("Congrats!");
+Console.WriteLine("Congrats! Attempts used: " + attempts);
