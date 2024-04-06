@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build Solution') {
             steps {
-                sh "dotnet build"
+                sh "dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false"
             }
         }
     }
