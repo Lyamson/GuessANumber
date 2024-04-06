@@ -7,7 +7,7 @@ pipeline{
 		stage('This is a test!'){
 			steps{
 				script{
-					print 'Hello World!'
+					print 'Hello World! New words.'
 				}
 			}
 		}
