@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build Solution') {
             steps {
-                sh "dotnet build --nologo -c Release -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --output output/ --no-restore"
+                sh "dotnet publish -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --self-contained false --no-restore"
             }
         }
     }
