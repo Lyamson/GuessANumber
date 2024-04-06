@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build Solution') {
             steps {
-                sh "dotnet build -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --self-contained false --no-restore"
+                sh "dotnet build -p:ProductVersion=1.0.${env.BUILD_NUMBER}.0 --no-restore"
             }
         }
     }
