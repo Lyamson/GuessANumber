@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Restore NuGet For Solution') {
             steps {
-                sh "nuget restore --nologo --no-cache"
+                sh "nuget restore"
             }
         }
 
